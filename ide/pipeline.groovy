@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './mvnw clean compile'
+                sh './mvnw clean package'
 
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
